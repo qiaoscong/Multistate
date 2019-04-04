@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <ImageView
+        android:id="@+id/load_failed_view_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@null"
+        android:src="@drawable/ic_duawang" />
+
+    <TextView
+        android:id="@+id/load_failed_view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/load_failed_view_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:gravity="center_horizontal"
+        android:text="断网了，人家加载不出来"
+        android:textColor="#888888"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+
+</RelativeLayout>
