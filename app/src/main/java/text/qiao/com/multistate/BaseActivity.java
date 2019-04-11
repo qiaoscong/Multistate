@@ -31,19 +31,26 @@ public abstract class BaseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_baselayout);
         initView();
     }
-    private void  initView(){
-        mLoadLayout=findViewById(R.id.load_layout);
+
+    /**
+     * 初始化
+     */
+
+    private void initView() {
+        mLoadLayout = findViewById(R.id.load_layout);
         mView = getLayoutInflater().inflate(getLayout(), null);
         mLoadLayout.removeAllViews();
         mLoadLayout.addSuccessView(mView);
         obtainData();
     }
+
     /**
      * @return 返回基础布局
      */
     public LoadLayout getLoadLayout() {
         return mLoadLayout;
     }
+
     protected abstract int getLayout();
 
     /**
